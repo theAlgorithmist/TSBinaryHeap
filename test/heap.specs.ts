@@ -364,7 +364,9 @@ describe('TSMT Heap Tests', () => {
     heap.insert(6.0);
     heap.insert(9.0);
 
-    let min: HeapData   = heap.extractRoot();
+    let min: HeapData = heap.extractRoot();
+    expect(min.value).to.equal(5);
+    
     let element: number = heap.peek();
 
     expect(heap.size).to.equal(3);

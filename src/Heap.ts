@@ -214,7 +214,7 @@ export class TSMT$Heap
       this.__heapifyDn(1);
     }
 
-    return this._data[1];
+    return root;
   }
 
   /**
